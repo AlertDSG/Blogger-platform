@@ -1,0 +1,30 @@
+.selectWrapper{
+    position: relative;
+}
+.select {
+    background: transparent;
+    width: 256px;
+    height: 36px;
+    border: 1px solid #DEDBDC;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 142%;
+    color: #1A1718;
+    appearance: none;
+    padding: 6px 0 6px 12px;
+}
+.option {
+    background: #F8346B;
+    outline: none;
+}
+.option:checked {
+    background: #891515FF;
+}
+.arrow {
+    position: absolute;
+    right: 12px;
+    top: 6px;
+    width: 24px;
+    height: 24px;
+}

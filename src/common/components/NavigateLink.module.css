@@ -1,0 +1,36 @@
+.active{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #F8346B
+}
+.default{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1A1718;
+}
+.bodyActive{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-right: 3px solid #F8346B;
+    height: 35px;
+}
+.body{
+    display: flex;
+    align-items: center;
+    border-right: 3px solid #FCFBFB;
+    gap: 12px;
+    height: 35px;
+}
+.iconActive{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

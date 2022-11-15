@@ -1,0 +1,23 @@
+.title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #1A1718;
+    margin-bottom: 7px;
+    position: relative;
+}
+.title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    height: 1px;
+    min-width: 100%;
+    background-color: #DEDBDC;
+}
+.bodyInputs {
+    display: flex;
+    margin-top: 31px;
+    gap: 12px;
+}

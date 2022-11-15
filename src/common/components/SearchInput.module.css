@@ -1,0 +1,27 @@
+.body {
+    border: 1px solid #DEDBDC;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    width: 672px;
+}
+
+.input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.input::placeholder {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 142%;
+    color: #B3B0B1;
+}
+
+.img {
+    width: 20px;
+    height: 20px;
+    margin: 12px 6px;
+}
