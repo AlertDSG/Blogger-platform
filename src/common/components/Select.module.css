@@ -1,12 +1,21 @@
 .selectWrapper{
     position: relative;
 }
+.option {
+    cursor: pointer;
+    background: #f7f5f5;
+    outline: none;
+}
+
+.option:hover {
+    background: #f7f5f5;
+}
 .select {
     background: transparent;
     width: 256px;
     height: 36px;
-    border: 1px solid #DEDBDC;
     outline: none;
+    border: 1px solid #DEDBDC;
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     line-height: 142%;
@@ -14,14 +23,16 @@
     appearance: none;
     padding: 6px 0 6px 12px;
 }
-.option {
-    background: #F8346B;
-    outline: none;
+
+.arrowUp {
+    position: absolute;
+    right: 12px;
+    top: 6px;
+    width: 24px;
+    height: 24px;
+    transform: rotate(180deg);
 }
-.option:checked {
-    background: #891515FF;
-}
-.arrow {
+.arrowDown {
     position: absolute;
     right: 12px;
     top: 6px;

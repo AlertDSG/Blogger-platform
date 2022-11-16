@@ -1,8 +1,9 @@
-import React, {ChangeEvent, WheelEvent} from 'react';
+import React, {ChangeEvent, useState, WheelEvent} from 'react';
 import styles from './Select.module.css'
 import arrow from '../../assets/keyboard_arrow_down.svg'
 
 export const Select = () => {
+    const [isOpen, setIsOpen] = useState(false)
     const selectHandler = (e: ChangeEvent<HTMLSelectElement>) => {
         console.log(e)
     }
@@ -13,9 +14,11 @@ export const Select = () => {
         <div className={styles.selectWrapper}>
             <select className={styles.select}
                     onChange={(e) => selectHandler(e)}
+                    onClick={() => setIsOpen(prevState => !prevState)}
+                    onBlur={() => setIsOpen(false)}
             >
                 <option className={styles.option} value="new"
-                         onWheelCapture={(e) => x(e)}
+                        onWheelCapture={(e) => x(e)}
                 >
                     New blogs first
                 </option>
@@ -29,7 +32,7 @@ export const Select = () => {
                     From Z to A
                 </option>
             </select>
-            <img src={arrow} alt="arrow" className={styles.arrow}/>
+            <img src={arrow} alt="arrow" className={isOpen ? styles.arrowUp: styles.arrowDown}/>
         </div>
     );
 };

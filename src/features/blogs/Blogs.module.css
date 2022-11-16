@@ -19,5 +19,26 @@
 .bodyInputs {
     display: flex;
     margin-top: 31px;
+    max-width: 940px;
     gap: 12px;
+}
+.bodyBtn{
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+}
+.btn {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 153px;
+    height: 36px;
+    background: transparent;
+    border: 1px solid rgba(26, 23, 24, 1);
+    color: #1A1718;
 }
